@@ -1,0 +1,156 @@
+:root {
+    --ms-bg: #c4dafa;
+    --ms-primary: #005187;
+    --ms-primary-soft: #4f85d0;
+    --ms-card: #eaf2ff;
+    --ms-card-white: #ffffff;
+    --ms-accent: #b8bc96;
+    --ms-accent-hover: #a1a57e;
+    --ms-text: #1e293b;
+    --ms-muted: #475569;
+    --ms-border: rgba(0, 81, 135, 0.18);
+}
+
+body {
+    background-color: var(--ms-bg);
+    color: var(--ms-text);
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar-custom {
+    background: rgba(0, 81, 135, 0.94);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 24px rgba(0, 81, 135, 0.25);
+}
+
+.navbar-custom h1,
+.navbar-custom a {
+    color: white !important;
+}
+
+.navbar-custom img {
+    border-color: white !important;
+}
+
+.text-white {
+    color: var(--ms-text) !important;
+}
+
+.navbar-custom .text-white,
+.navbar-custom h1 {
+    color: white !important;
+}
+
+.text-gray-300,
+.text-gray-400 {
+    color: var(--ms-muted) !important;
+}
+
+.text-math-main,
+.text-rose-300,
+.text-rose-400 {
+    color: var(--ms-primary) !important;
+    font-weight: 800;
+}
+
+.text-gradient-math {
+    background: linear-gradient(135deg, var(--ms-primary), var(--ms-primary-soft));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-rose-400\/10 {
+    background-color: rgba(0, 81, 135, 0.10) !important;
+    color: var(--ms-primary) !important;
+}
+
+.border-rose-400\/20 {
+    border-color: rgba(0, 81, 135, 0.22) !important;
+}
+
+.btn-math {
+    background: linear-gradient(135deg, var(--ms-primary-soft));
+    color: #ffffff !important;
+    font-weight: 800;
+    border-radius: 1rem;
+    padding: 0.8rem 2rem;
+    transition: all 0.25s ease;
+    box-shadow: 0 10px 24px rgba(0, 81, 135, 0.35);
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-math:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 32px rgba(0, 81, 135, 0.45);
+    filter: brightness(1.05);
+}
+
+.bg-slate-950 {
+    background-color: var(--ms-bg) !important;
+}
+
+.bg-slate-900 {
+    background-color: var(--ms-card) !important;
+    border: 1px solid var(--ms-border) !important;
+    box-shadow: 0 16px 35px rgba(0, 81, 135, 0.12);
+}
+
+.bg-slate-900\/50 {
+    background-color: var(--ms-card-white) !important;
+    border: 1px solid var(--ms-border) !important;
+    box-shadow: 0 12px 28px rgba(0, 81, 135, 0.10);
+}
+
+.bg-slate-800\/50 {
+    background-color: rgba(79, 133, 208, 0.12) !important;
+    border: 1px solid rgba(0, 81, 135, 0.14) !important;
+}
+
+.border-slate-800,
+.border-slate-900 {
+    border-color: var(--ms-border) !important;
+}
+
+.border-math-main,
+.border-ms-verde {
+    border-color: var(--ms-primary) !important;
+}
+
+.group {
+    transition: all 0.3s ease;
+}
+
+.group:hover {
+    transform: translateY(-4px);
+}
+
+.text-\[--ms-azul-soft\] {
+    color: var(--ms-primary-soft) !important;
+    font-weight: 800 !important;
+}
+
+footer {
+    background-color: var(--ms-primary) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.18) !important;
+}
+
+footer p {
+    color: rgb(0, 0, 0) !important;
+}
+
+.shadow-2xl {
+    box-shadow: 0 20px 45px rgba(0, 81, 135, 0.18) !important;
+}
+
+@media (max-width: 768px) {
+    .btn-pinky {
+        width: 100%;
+        text-align: center;
+    }
+
+    header {
+        padding-top: 4rem;
+    }
+}

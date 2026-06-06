@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MathStack | Descarga el APK</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --primary:#2563eb;
+      --secondary:#10b981;
+      --bg:#c4dafa;
+      --card:#d51616;
+      --text:#1e293b;
+      --muted:#64748b;
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Inter',sans-serif;
+    }
+
+    body{
+      background:var(--bg);
+      color:var(--text);
+    }
+
+    .gradient-text{
+      background:linear-gradient(135deg,var(--primary),var(--secondary));
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .btn-primary{
+      background:var(--primary);
+      color:white;
+      padding:14px 28px;
+      border-radius:16px;
+      font-weight:700;
+      transition:.3s;
+      display:inline-block;
+    }
+
+    .btn-primary:hover{
+      transform:translateY(-3px);
+      background:#1d4ed8;
+    }
+
+    .card{
+      background:white;
+      border-radius:28px;
+      border:1px solid #e2e8f0;
+      transition:.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+      box-shadow:0 20px 40px rgba(0,0,0,.08);
+    }
+
+    .feature-card{
+      background:white;
+      border-radius:24px;
+      padding:2rem;
+      border:1px solid #e2e8f0;
+      transition:.3s;
+    }
+    .feature-card img{
+    background: var(--bg);
+    border:1px solid #bfdbfe;
+    border-radius:16px;
+    width:100%;
+    height:160px;
+    object-fit:contain;
+    padding:20px;
+    margin-bottom:1.5rem;
+  }
+
+    .feature-card:hover{
+      transform:translateY(-5px);
+      box-shadow:0 15px 30px rgba(0,0,0,.08);
+    }
+
+    .team-card{
+      background:white;
+      border-radius:24px;
+      padding:2rem;
+      border:1px solid #e2e8f0;
+      transition:.3s;
+    }
+
+    .team-card:hover{
+      transform:translateY(-5px);
+      box-shadow:0 15px 30px rgba(0,0,0,.08);
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="sticky top-0 z-50 bg-white backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <div class="flex items-center gap-3">
+        <img src="Logo.png" alt="MathStack" class="w-12 h-12">
+        <h1 class="text-2xl font-extrabold">
+          Math<span class="text-blue-600">Stack</span>
+        </h1>
+      </div>
+
+      <a href="downloads/mathstack-v1.0.0.apk" class="btn-primary">
+        Descargar APK
+      </a>
+
+    </div>
+  </nav>
+
+  <header class="text-center pt-24 pb-16 px-4">
+
+    <span class="inline-block bg-blue-100 text-blue-700 px-4 py-2 rounded-full font-semibold text-sm mb-6">
+      Plataforma de Aprendizaje Adaptativo
+    </span>
+
+    <h2 class="text-5xl md:text-7xl font-extrabold leading-tight max-w-5xl mx-auto">
+      Aprende <span class="gradient-text">Matemáticas</span><br>
+      de forma <span class="gradient-text">Inteligente</span>
+    </h2>
+
+    <p class="text-slate-500 text-lg max-w-2xl mx-auto mt-8">
+      Identifica tus deficiencias académicas, recibe rutas personalizadas de estudio y mejora tus habilidades matemáticas mediante gamificación.
+    </p>
+
+  </header>
+
+  <section class="max-w-7xl mx-auto px-6 pb-24">
+
+    <div class="card p-8 md:p-14 grid md:grid-cols-2 gap-12 items-center">
+
+      <div class="flex justify-center">
+        <img src="Logo.png" alt="MathStack"
+            class="max-w-md w-full">
+      </div>
+
+      <div>
+
+        <p class="uppercase text-blue-600 font-bold tracking-widest mb-4">
+          Conoce el proyecto
+        </p>
+
+        <h3 class="text-4xl font-extrabold mb-6">
+          Tu aprendizaje matemático,
+          <span class="text-emerald-500">personalizado.</span>
+        </h3>
+
+        <p class="text-slate-600 leading-relaxed mb-4">
+          MathStack es una aplicación móvil diseñada para estudiantes universitarios que desean reforzar sus conocimientos matemáticos mediante aprendizaje adaptativo.
+        </p>
+
+        <p class="text-slate-600 leading-relaxed mb-4">
+          La plataforma realiza una evaluación diagnóstica para identificar fortalezas y áreas de oportunidad, generando automáticamente una ruta personalizada de aprendizaje.
+        </p>
+
+        <p class="text-slate-600 leading-relaxed mb-8">
+          Con lecciones, ejercicios interactivos, monedas virtuales, XP, niveles, insignias y rachas, el aprendizaje se vuelve más dinámico y motivador.
+        </p>
+
+        <a href="downloads/mathstack-v1.0.0.apk" class="btn-primary">
+          Descargar Ahora
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="max-w-7xl mx-auto px-6 pb-24">
+
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-extrabold">
+        Funciones Principales
+      </h2>
+
+      <div class="w-24 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="feature-card">
+  <img src="Logo.png" alt="Evaluación Diagnóstica">
+
+  <h4 class="text-xl font-bold mb-4 text-blue-600">
+    Evaluación Diagnóstica
+  </h4>
+
+  <p class="text-slate-600">
+    Detecta fortalezas y debilidades para conocer tu nivel real en matemáticas.
+  </p>
+</div>
+
+      <div class="feature-card">
+        <img src="Logo.png" class="h-40 mx-auto mb-6">
+
+        <h4 class="text-xl font-bold mb-4 text-blue-600">
+          Rutas Personalizadas
+        </h4>
+
+        <p class="text-slate-600">
+          Recibe una guía de estudio adaptada a tu desempeño académico.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <img src="Logo.png" class="h-40 mx-auto mb-6">
+
+        <h4 class="text-xl font-bold mb-4 text-blue-600">
+          Gamificación
+        </h4>
+
+        <p class="text-slate-600">
+          Obtén XP, monedas, insignias y mantén rachas de estudio para mejorar constantemente.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="max-w-7xl mx-auto px-6 pb-24">
+
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-extrabold">
+        El Equipo Detrás de MathStack
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="team-card text-center">
+      <img src="wil.jpng"
+        class="w-24 h-24 rounded-full object-cover mx-auto mb-6 border-4 border-[#2563EB] shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl">
+
+        <h4 class="font-bold text-xl">
+          Williams Espinosa López
+        </h4>
+
+        <p class="text-blue-600 mt-2">
+          Android Developer
+        </p>
+      </div>
+
+      <div class="team-card text-center">
+        <img src="wil.jpng"
+        class="w-24 h-24 rounded-full object-cover mx-auto mb-6 border-4 border-[#2563EB] shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl">
+
+        <h4 class="font-bold text-xl">
+          Alexis García Rojas
+        </h4>
+
+        <p class="text-blue-600 mt-2">
+          Lead Developer
+        </p>
+      </div>
+
+      <div class="team-card text-center">
+        <img src="wil.jpng"
+        class="w-24 h-24 rounded-full object-cover mx-auto mb-6 border-4 border-[#2563EB] shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl">
+
+        <h4 class="font-bold text-xl">
+          Daniel Camacho Morales
+        </h4>
+
+        <p class="text-blue-600 mt-2">
+          Backend Developer
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer class="text-center py-10 border-t border-slate-200">
+
+    <p class="italic text-slate-500 mb-2">
+      "Aprende a tu ritmo, domina las matemáticas"
+    </p>
+
+    <p class="text-sm text-slate-400">
+      © 2026 MathStack Team. Todos los derechos reservados.
+    </p>
+
+  </footer>
+
+</body>
+</html>
+
