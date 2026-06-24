@@ -16,7 +16,7 @@
                 <img src="img/math-logo.png" alt="Logo" class="w-12 h-12 rounded-full">
                 <h1 class="text-2xl font-bold tracking-tighter">MathStack</h1>
             </div>
-            <a href="downloads/mathstack-v1.1.1.apk" class="btn-math text-sm" onclick="mostrarProximamente()">Descargar APK</a>
+            <a href="downloads/mathstack-v1.1.1.apk" class="btn-math text-sm" onclick="descargarApk(event, this.href)">Descargar APK</a>
         </div>
     </nav>
 
@@ -53,7 +53,7 @@
                 </div>
 
                 <div class="pt-4">
-                    <a href="downloads/mathstack-v1.1.1.apk" class="btn-math text-xl px-12 py-5 w-full md:w-auto text-center" onclick="mostrarProximamente()">
+                    <a href="downloads/mathstack-v1.1.1.apk" class="btn-math text-xl px-12 py-5 w-full md:w-auto text-center" onclick="descargarApk(event, this.href)">
                         Descargar APK Ahora
                     </a>
                 </div>
@@ -133,8 +133,19 @@
     </footer>
 
     <script>
-    function mostrarProximamente() {
-        alert("Próximamente estará disponible la descarga de MathStack.");
+    async function descargarApk(event, url) {
+        event.preventDefault();
+        try {
+            const response = await fetch(url, { method: 'HEAD' });
+            if (response.ok) {
+                window.location.href = url;
+            } else {
+                alert("Próximamente estará disponible la descarga de MathStack.");
+            }
+        } catch (error) {
+            console.error("Error checking APK:", error);
+            alert("Próximamente estará disponible la descarga de MathStack.");
+        }
     }
     </script>
 
