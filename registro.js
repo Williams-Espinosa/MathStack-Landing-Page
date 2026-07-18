@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
 
-        submitBtn.disabled = true;
+        submitBtn.disabled = false;
         submitBtn.classList.add('opacity-80', 'cursor-not-allowed');
         btnText.textContent = 'Enviando...';
         loadingSpinner.classList.remove('hidden');
